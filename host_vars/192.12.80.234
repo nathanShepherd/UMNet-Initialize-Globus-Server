@@ -1,0 +1,5 @@
+interfaces:
+  - interface_name: em1
+    interface_gateway_ipv4: 192.12.80.233
+  - interface_name: p1p1
+    interface_gateway_ipv4: 192.12.80.225

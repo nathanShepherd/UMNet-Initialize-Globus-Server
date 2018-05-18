@@ -1,0 +1,22 @@
+# main perfSONAR config
+
+- name: install perfSONAR toolkits
+  hosts: toolkits_
+  vars_files:
+    - vars/perfsonar.yml
+  roles:
+    - { role: epcjr.perfsonar-toolkit }
+
+- name: install perfSONAR testpoints
+  hosts: testpoints
+  vars_files:
+    - vars/perfsonar.yml
+  roles:
+    - { role: epcjr.perfsonar-testpoint }
+
+#- name: install perfSONAR Toolkits
+#  hosts: all
+#  vars_files:
+#    - vars/perfsonar-toolkit.yml
+#  roles:
+#    - { role: epcjr.perfsonar-toolkit }
